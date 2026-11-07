@@ -1,0 +1,279 @@
+/*
+    Student E-Portfolio styles
+    Author: Alen
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Consolas, ui-monospace, monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #1a1a1a;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #880E4F;
+    color: #f4f6f8;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #FF6EC7;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode header {
+    background-color: #FFB6C1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+header .nav-links a {
+    color: #b33b72;          
+}
+
+body.dark-mode header .nav-links a {
+    color: #FF1D8D;          
+}
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2.5rem;
+    scroll-margin-top: 5rem;
+}
+
+h2 {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 3px solid #E75480;
+    display: inline-block;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: #ccc; 
+}
+
+.name {
+    color: #ff086A;          
+}
+
+body.dark-mode .name {
+    color: #EFAED4;          
+}
+
+.aboutm{
+    background-color: #EFAED4;
+    color: #510419;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+body.dark-mode .aboutm{
+    background-color: #C11C84;   
+    color: #ffffff;              
+}
+
+.s-list li{
+    background-color: #EFAED4;
+    color: #510419;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+body.dark-mode .s-list li {
+    background-color: #C11C84;   
+    color: #ffffff;              
+}
+
+.l-list li{
+    background-color: #EFAED4;
+    color: #510419;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+body.dark-mode .l-list li {
+    background-color: #C11C84;   
+    color: #ffffff;              
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.card {
+    background-color: #EFAED4;
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin-bottom: 0.4rem;
+}
+
+body.dark-mode .card {
+    background-color: #C11C84;
+}
+
+
+button {
+    padding: 0.6rem 1.2rem;
+    background-color: #ff086A;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f098B2;
+}
+
+a {
+    color: #E75480;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #C11C84;
+}
+
+body.dark-mode a {
+    color: #f098B2;
+}
+
+body.dark-mode a:hover {
+    color: #E75480;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #C11C84;
+}
+
+body.dark-mode .nav-links a {
+    color: #f098B2;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #E75480;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #FF1D8D;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode footer {
+    background-color: #b33b72;
+}
+
+.edu-list {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;               
+    margin-top: 0.5rem;
+}
+
+.edu-item {
+    background-color: #EFAED4;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border-left: 4px solid #E75480;   
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode .edu-item {
+    background-color: #C11C84;
+}
+
+.edu-school {
+    font-weight: 600;
+}
+
+.edu-year {
+    opacity: 0.7;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+@media (max-width: 600px) {
+    .box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    nav {
+        padding: 0.75rem 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
